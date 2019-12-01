@@ -11,7 +11,7 @@
     (is (= (fuel-required 1969) 654))
     (is (= (fuel-required 100756) 33583))))
 
-(deftest test-fuel-required
+(deftest test-main
   (testing "gets the right answer"
     (let [ raw_inputs (slurp (io/resource "inputs.txt"))
            sanitized_inputs (str/split raw_inputs #"\s+") ]
